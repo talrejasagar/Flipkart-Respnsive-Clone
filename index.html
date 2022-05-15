@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsivestyle.css" />
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+
+    <div class="container">
+      <div class="section1">
+        <div class="hamberg">
+          <img
+            alt="menu"
+            src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGIiBoZWlnaHQ9IjM2IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMyAxOGgxOHYtMkgzdjJ6bTAtNWgxOHYtMkgzdjJ6bTAtN3YyaDE4VjZIM3oiLz48L3N2Zz4="
+            height="20px"
+            width="20px"
+          />
+        </div>
+
+        <div class="logosearch">
+          <div class="logo">
+            <img src="assets/image/icon.png" width="75" />
+            <p>
+              <a
+                href=""
+                style="
+                  text-decoration: none;
+                  color: white;
+                  font-style: italic;
+                  font-size: 11px;
+                "
+                >Explore<span style="color: #ffe500">Plus</span></a
+              >
+              <img src="assets/image/1.png" width="10" />
+            </p>
+          </div>
+
+          <div class="search">
+            <input
+              class="input-search"
+              type="text"
+              placeholder="Search for products, brands and more"
+            />
+            <button style="border: none; background: white; padding: 8px">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 17 18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="#2874F1" fill-rule="evenodd">
+                  <path
+                    class="_34RNph"
+                    d="m11.618 9.897 4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"
+                  />
+                  <path
+                    class="_34RNph"
+                    d="M6.486 10.901a4.374 4.374 0 0 1-4.381-4.368 4.375 4.375 0 0 1 4.381-4.369 4.375 4.375 0 0 1 4.381 4.369 4.374 4.374 0 0 1-4.381 4.368m0-10.835C2.904.066 0 2.961 0 6.533 0 10.105 2.904 13 6.486 13s6.486-2.895 6.486-6.467c0-3.572-2.904-6.467-6.486-6.467"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section2">
+        <div class="login">
+          <button class="login-button">Login</button>
+        </div>
+
+        <div class="more">
+          <button class="button-more">More</button>
+        </div>
+
+        <div class="cart">
+          <button class="button-cart">
+            <img src="assets/image/svg-gobbler.svg" alt="" /> Cart
+          </button>
+        </div>
+      </div>
+
+      <div class="section3">
+        <div class="plus">
+          <img
+            class="_2PBiNc"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxMiAxNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Im0yNTQuMTIgNTMuNjE3Yy4wMjkgMS4wMS4xMDEgMi4zODIuMTUgMi42OC4wMjUuMTUyLjE1Ni4yNjMuMzEuMjYzbC42NzIuMDIxYy4xNTQgMCAuMTc1LS4xMTEuMTk5LS4yNjQuMDQ5LS4zMDQuMTIyLTEuNjkyLjE1MS0yLjY5NyAxLS4wMjkgMi4zOTItLjEwMiAyLjY5Ny0uMTUxLjE1My0uMDI0LjI2NC0uMDQ1LjI2NC0uMTk5bC0uMDIxLS42NzJjMC0uMTU0LS4xMTEtLjI4NS0uMjYzLS4zMS0uMjk4LS4wNDktMS42NjktLjEyMS0yLjY4LS4xNS0uMDMxLS45ODYtLjEwMi0yLjMxMi0uMTQ5LTIuNjE1LS4wMjQtLjE1My0uMDQ0LS4yNjYtLjItLjI2NmwtLjY2OS0uMDIxYy0uMTU1IDAtLjI4Ni4xMTItLjMxLjI2NC0uMDQ4LjI5OS0uMTE5IDEuNjQxLS4xNDkgMi42NC0uOTk4LjAzLTIuMzQuMTAyLTIuNjQuMTQ5LS4xNTMuMDI0LS4yNjQuMTU2LS4yNjQuMzFsLjAyMS42NjljMCAuMTU1LjExMy4xNzYuMjY2LjIuMzAzLjA0NyAxLjYyOS4xMTggMi42MTUuMTQ5bTUuNzY1IDYuMzgzaC05LjYyMWMtLjQxMyAwLS43NjUtLjI2Ny0uODMxLS42MzMtLjE2Ni0uOTEzLS40MzUtNC43MDEtLjQzNS02Ljg2NyAwLTIuMTA0LjI3My01LjkzMi40MzgtNi44NjQuMDY1LS4zNjcuNDE4LS42MzYuODMyLS42MzZoOS42MTNjLjQxNiAwIC40NzEuMjcxLjUzNS42NC4xNjUuOTU2LjQ0MiA0LjgzNS40NDIgNi44NiAwIDIuMTEzLS4yNzIgNS45MzUtLjQzOCA2Ljg2NS0uMDY1LjM2Ny0uMTIuNjM1LS41MzQuNjM1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjQ5LTQ1KSIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4="
+          />
+        </div>
+
+        <div class="cart">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 15 15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g fill="#fff">
+              <path
+                d="m5.189 13.04c0 .996-.791 1.804-1.767 1.804-.976 0-1.767-.808-1.767-1.804 0-.996.791-1.804 1.767-1.804.976 0 1.767.808 1.767 1.804"
+              ></path>
+              <path
+                d="m14.912 2.259h-14.298l2.247 6.917c.042.129.16.216.293.216h8.06c-.064.69-.629 1.841-1.702 1.841h-6.04l1.072 1.991h5.611c1.881 0 2.938-2.278 3.657-4.719.888-3.01 1.219-6.245 1.106-6.245"
+              ></path>
+              <path
+                d="m.615 2.259l-.592-1.828c-.08-.207.069-.431.287-.431h1.482c.126 0 .24.079.287.198l.682 2.061c0 0-.63 1.642-1.942.066"
+              ></path>
+              <path
+                d="m2.262.756c0 0 .498 1.503 2.234 1.503l-1.736.749-1.104-.749.607-1.503"
+              ></path>
+              <path
+                d="m13.424 13.325c0 .837-.664 1.516-1.484 1.516-.82 0-1.484-.679-1.484-1.516 0-.837.664-1.516 1.484-1.516.82 0 1.484.679 1.484 1.516"
+              ></path>
+            </g>
+          </svg>
+        </div>
+
+        <div class="loginM">
+          <span style="color: white">Login</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header End -->
+
+    <!-- Category List Start -->
+    <div class="catcontent">
+      <div id="content"></div>
+    </div>
+
+    <!-- Category List End -->
+
+    <!-- Banner Start -->
+
+    <div id="inner">
+      <div class="images-wrapper">
+        <img src="assets/image/banner1.jpg" alt="img1" class="banner" />
+        <img src="assets/image/banner2.jpg" alt="img2" class="banner" />
+        <img src="assets/image/banner1.jpg" alt="img1" class="banner" />
+        <!-- <img src="banner6.jpg"  alt="img3" class="banner" /> -->
+        <img src="assets/image/banner4.webp" alt="img4" class="banner" />
+      </div>
+    </div>
+
+    <!-- Banner End -->
+
+    <!-- Card Product section -->
+
+    <div class="card-container">
+      <div class="heading">
+        <h2 class="head-title">Deals of the Day</h2>
+      </div>
+      <div class="bottom-container">
+        <div class="product-list-top">
+          <div class="card">
+            <div class="primary-element">
+              <img
+                alt="Microphone"
+                src="assets/image/11.jpeg"
+                height="150px"
+                width="150px"
+              />
+            </div>
+            <div class="secondary-element">
+              <h3 class="text-primary">Shoe Racks</h3>
+              <p class="text-success">50 % Off</p>
+              <p class="text-disabled">Collections</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="primary-element">
+              <img
+                alt="Microphone"
+                src="assets/image/12.jpeg"
+                height="150px"
+                width="150px"
+              />
+            </div>
+            <div class="secondary-element">
+              <h3 class="text-primary">Laptop Table</h3>
+              <p class="text-success">50 % Off</p>
+              <p class="text-disabled">Best Offer</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="primary-element">
+              <img
+                alt="Microphone"
+                src="assets/image/21.jpeg"
+                height="150px"
+                width="150px"
+              />
+            </div>
+            <div class="secondary-element">
+              <h3 class="text-primary">ADIDAS, Reebok</h3>
+              <p class="text-success">Min. 40% Off</p>
+              <p class="text-disabled">Sports Shoes</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="primary-element">
+              <img
+                alt="Microphone"
+                src="assets/image/22.jpg"
+                height="150px"
+                width="150px"
+              />
+            </div>
+            <div class="secondary-element">
+              <h3 class="text-primary">Backpacks, Handbags</h3>
+              <p class="text-success">80%+Extra</p>
+              <p class="text-disabled">Latest Collection!</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="primary-element">
+              <img
+                alt="Microphone"
+                src="assets/image/20.jpeg"
+                height="150px"
+                width="150px"
+              />
+            </div>
+            <div class="secondary-element">
+              <h3 class="text-primary">Cushions, Curtains</h3>
+              <p class="text-success">₹99+Extra</p>
+              <p class="text-disabled">Never Before</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="primary-element">
+              <img
+                alt="Microphone"
+                src="assets/image/19.jpeg"
+                height="150px"
+                width="150px"
+              />
+            </div>
+            <div class="secondary-element">
+              <h3 class="text-primary">Casio. Fossil</h3>
+              <p class="text-success">Upto 75%</p>
+              <p class="text-disabled">Best Offer</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="primary-element">
+              <img alt="Microphone" src="assets/image/31.jpg" height="250px" />
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="advertise">
+          <div class="coupon">
+            <img
+              src="assets/image/31.jpg"
+              alt=""
+              height="354px"
+              width="231px"
+            />
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="heading">
+        <h2 class="head-title">Mens footwear</h2>
+      </div>
+      <div class="product-list">
+        <div class="card">
+          <div class="primary-element">
+            <img
+              alt="Microphone"
+              src="assets/image/13.jpeg"
+              height="150px"
+              width="150px"
+            />
+          </div>
+          <div class="secondary-element">
+            <h3 class="text-primary">Best Seller</h3>
+            <p class="text-success">From 149</p>
+            <p class="text-disabled">Shoes, Sandals</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="primary-element">
+            <img
+              alt="Microphone"
+              src="assets/image/14.jpeg"
+              height="150px"
+              width="150px"
+            />
+          </div>
+          <div class="secondary-element">
+            <h3 class="text-primary">WROGN</h3>
+            <p class="text-success">30% off</p>
+            <p class="text-disabled">Men's Footwear</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="primary-element">
+            <img
+              alt="Microphone"
+              src="assets/image/15.jpeg"
+              height="150px"
+              width="150px"
+            />
+          </div>
+          <div class="secondary-element">
+            <h3 class="text-primary">Woodland, Red Tape</h3>
+            <p class="text-success">Upto 60% Off</p>
+            <p class="text-disabled">Men's Casual Shoes</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="primary-element">
+            <img
+              alt="Microphone"
+              src="assets/image/16.jpeg"
+              height="150px"
+              width="150px"
+            />
+          </div>
+          <div class="secondary-element">
+            <h3 class="text-primary">Nike, Skechers</h3>
+            <p class="text-success">Upto 40% Off</p>
+            <p class="text-disabled">Men's Sports</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="primary-element">
+            <img
+              alt="Microphone"
+              src="assets/image/17.jpeg"
+              height="150px"
+              width="150px"
+            />
+          </div>
+          <div class="secondary-element">
+            <h3 class="text-primary">Best Selling</h3>
+            <p class="text-success">30-60% Off</p>
+            <p class="text-disabled">Men's Sneakers</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="primary-element">
+            <img
+              alt="Microphone"
+              src="assets/image/18.jpeg"
+              height="150px"
+              width="150px"
+            />
+          </div>
+          <div class="secondary-element">
+            <h3 class="text-primary">Puma</h3>
+            <p class="text-success">40-70% Off</p>
+            <p class="text-disabled">Men's Footwear</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="heading">
+        <h2 class="head-title">Best of electronics</h2>
+      </div>
+      <div class="product-list">
+        <div class="card">
+          <div class="primary-element">
+            <img
+              alt="Microphone"
+              src="assets/image/25.jpeg"
+              height="150px"
+              width="150px"
+            />
+          </div>
+          <div class="secondary-element">
+            <h3 class="text-primary">BP Monitors</h3>
+            <p class="text-success">From ₹999</p>
+            <p class="text-disabled">Omron & more</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="primary-element">
+            <img
+              alt="Microphone"
+              src="assets/image/24.jpeg"
+              height="150px"
+              width="150px"
+            />
+          </div>
+          <div class="secondary-element">
+            <h3 class="text-primary">Projectors</h3>
+            <p class="text-success">From ₹8999</p>
+            <p class="text-disabled">ZEBRONICS</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="primary-element">
+            <img
+              alt="Microphone"
+              src="assets/image/26.jpeg"
+              height="150px"
+              width="150px"
+            />
+          </div>
+          <div class="secondary-element">
+            <h3 class="text-primary">Biggest Deals</h3>
+            <p class="text-success">Upto 40% Off</p>
+            <p class="text-disabled">Top Brands</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="primary-element">
+            <img
+              alt="Microphone"
+              src="assets/image/27.jpeg"
+              height="150px"
+              width="150px"
+            />
+          </div>
+          <div class="secondary-element">
+            <h3 class="text-primary">Gaming Headset</h3>
+            <p class="text-success">Just ₹ 1,899</p>
+            <p class="text-disabled">₹ 2,999</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="primary-element">
+            <img
+              alt="Microphone"
+              src="assets/image/28.jpeg"
+              height="150px"
+              width="150px"
+            />
+          </div>
+          <div class="secondary-element">
+            <h3 class="text-primary">Cables , Chargers</h3>
+            <p class="text-success">SHOP NOW!</p>
+            <p class="text-disabled">Starting ₹49</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="primary-element">
+            <img
+              alt="Microphone"
+              src="assets/image/30.jpeg"
+              height="150px"
+              width="150px"
+            />
+          </div>
+          <div class="secondary-element">
+            <h3 class="text-primary">Soundbars</h3>
+            <p class="text-success">From ₹2,999</p>
+            <p class="text-disabled">JBL, Motorola</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD SECTION END-->
+
+    <!-- Footer Content-->
+
+    <div class="footer-section">
+      <div class="title-section">
+        <span>Top Stories:</span>
+        <a class="brand-section" href="#">Brand Directory</a>
+      </div>
+      <div class="description-section">
+        <p class="para-description">
+          MOST SEARCHED FOR ON FLIPKART:iPhone 13iPhone 13 ProiPhone 13 Pro
+          MaxiPhone 13 MiniFlipkart QuickBooksFlipkart Help CentreFlipkart Track
+          OrdersFlipkart Manage OrdersFlipkart Return OrdersFlipkart Gift Cards
+          StoreFlipkart Axis Bank Credit CardFlipkart Pay Later
+        </p>
+        <br />
+        <p class="para-description">
+          MOBILES:iPhone 12 64GBiPhone 12 Pro 512GBiPhone 12 128GBVivo Y91iVivo
+          Y11Vivo Y15Vivo Y50Vivo Y12Reno2 FOppo A12Oppo F15Oppo A31Samsung
+          A71Samsung A51Samsung A31Realme X2iPhone 11iPhone 11 ProiPhone 11 Pro
+          MaxMobile Offersiphone x4G MobileNokia MobileSamsung MobileiphoneOppo
+          MobileVivo Mobile
+        </p>
+        <br />
+        <p class="para-description">
+          CAMERA:GoPro Action CameraNikon CameraCanon CameraSony CameraCanon
+          DSLRNikon DSLR
+        </p>
+        <br />
+        <p class="para-description">
+          LAPTOPS:Microsoft Surface Go Pentium Gold 64GBMicrosoft Surface Go
+          Pentium 128GBBranded LaptopsApple LaptopsAcer LaptopsLenovo
+          LaptopsDell LaptopsAsus LaptopsHP LaptopsGaming Laptops2 in 1
+          LaptopsBusiness Laptops
+        </p>
+        <br />
+        <p class="para-description">
+          TVS:Nokia TVPanasonic TVThomson TVVu TVRealme TVMotorola TVOnePlus
+          TVsLG TVTVSony TVSamsung TVAndroid TelevisionIffalcon TvMi TV
+        </p>
+        <br />
+        <p class="para-description">
+          LARGE APPLIANCES:Washing MachinesRefrigeratorsAir ConditionersElectric
+          CookersElectric Jug(Heater) / Travel KettlesInduction
+          CooktopsInverters / stabilizerIrons / Iron BoxMixer Grinder JuicerWet
+          GrindersChimneysMicrowave OvensVacuum CleanersWater PurifierFan
+        </p>
+      </div>
+    </div>
+    <!-- Footer Content End -->
+
+    <!-- Footer Section -->
+    <div class="footer-content">
+      <div class="footer-heading">
+        <div class="footer-data">
+          <p>ABOUT</p>
+          <a href="">Contact us</a>
+          <a href="">About us</a>
+          <a href="">Careers</a>
+          <a href="">Flipkart Stories</a>
+          <a href="">Press</a>
+          <a href="">Flipkart Wholesale</a>
+          <a href="">Corporate Information</a>
+        </div>
+
+        <div class="footer-data">
+          <p>HELP</p>
+          <a href="">Payments</a>
+          <a href="">Shipping</a>
+          <a href="">Cancellation & Returns</a>
+          <a href="">FAQ</a>
+          <a href="">Report Infringement</a>
+        </div>
+
+        <div class="footer-data">
+          <p>POLICY</p>
+          <a href="">Return Policy</a>
+          <a href="">Terms Of Use</a>
+          <a href="">Security</a>
+          <a href="">Privacy</a>
+          <a href="">Sitemap</a>
+          <a href="">EPR Compliance</a>
+        </div>
+
+        <div class="footer-data">
+          <p>SOCIAL</p>
+          <a href="">Facebook</a>
+          <a href="">Twitter</a>
+          <a href="">YouTube</a>
+        </div>
+
+        <div
+          class="footer-data2"
+          style="border-left: 1px solid #454d5e; padding: 0 25px"
+        >
+          <p style="margin-bottom: 9px; color: #878787; font-size: 12px">
+            Mail Us:
+          </p>
+          <p>Buildings Alyssa, Begonia &amp;</p>
+          <p>Clove Embassy Tech Village,</p>
+          <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+          <p>Bengaluru, 560103,</p>
+          <p>Karnataka, India</p>
+        </div>
+
+        <!-- <div class="footer-data2">
+          <p style="margin-bottom: 9px; color: #878787; font-size: 12px">
+            Registered Office Address:
+          </p>
+          <p>Flipkart Internet Private Limited,</p>
+          <p>Buildings Alyssa, Begonia &</p>
+          <p>Clove Embassy Tech Village,</p>
+          <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+          <p>Bengaluru, 560103,</p>
+          <p>Karnataka, India</p>
+          <p>CIN : U51109KA2012PTC066107</p>
+          <p>
+            Telephone:
+            <a href="tel:18002029898" style="text-decoration: none"
+              >1800 202 9898</a
+            >
+          </p>
+        </div> -->
+      </div>
+    </div>
+    <!-- Footer Section End-->
+  </body>
+</html>
+<script src="assets/js/script.js"></script>

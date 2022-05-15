@@ -1,0 +1,33 @@
+@media (max-width: 930px) {
+  .hamberg {
+    display: block;
+    position: absolute;
+    top: 20px;
+  }
+  .section3 {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    top: 20px;
+    right: 23px;
+  }
+  .section2 {
+    display: none;
+  }
+  .logosearch {
+    flex-direction: column;
+  }
+  .logo {
+    margin-left: 35px;
+  }
+  .container {
+    padding: 10px 111px;
+    box-sizing: border-box;
+  }
+  .input-search {
+    width: 90vw;
+  }
+#content {
+ overflow: scroll;
+}
+}
